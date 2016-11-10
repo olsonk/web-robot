@@ -30,11 +30,6 @@ def followLine():
     motorL.stop()
     motorR.stop()
 
-def checkLine():
-    motorL.stop()
-    motorR.stop()
-    pivotLeft()
-
 line.when_line = followLine
 line.when_no_line = pivotLeft
 pause()
