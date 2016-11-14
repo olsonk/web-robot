@@ -30,6 +30,8 @@ def followLine():
     motorL.stop()
     motorR.stop()
 
-line.when_line = followLine
-line.when_no_line = pivotLeft
-pause()
+while True:
+    if line.value:
+        pivotLeft()
+    else:
+        followLine()
